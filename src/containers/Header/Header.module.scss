@@ -1,0 +1,188 @@
+.siteHeader {
+  // *{outline: 1px solid royalblue;}
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    .lead {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      h2 {
+        width: 152px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 17px;
+        margin-left: 14px;
+      }
+    }
+    .navLinksHolder {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 70px;
+      .navLinks {
+        a {
+          color: #111;
+          font-size: 15px;
+          font-weight: 500;
+          padding: 12px;
+          margin-right: 10px;
+          border-bottom: 1px solid transparent;
+          transition: all 0.3s ease;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover {
+            border-color: #333;
+          }
+        }
+      }
+      .siteLanguage {
+        button {
+          position: relative;
+          padding: 5px;
+          color: #4a4a4a;
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+            &::before {
+              position: absolute;
+              top: 5px;
+              right: 44px;
+              height: 16px;
+              width: 2px;
+              background: #4a4a4a94;
+              content: '';
+            }
+          }
+          &:disabled {
+            color: #bbb;
+            cursor: default;
+          }
+        }
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        &:hover {
+          .userName {
+            color: #333;
+          }
+          .userImg {
+            border-color: #333;
+          }
+        }
+        .userName {
+          max-width: 120px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          color: #787993;
+          font-size: 17px;
+          font-weight: 500;
+          margin-right: 13px;
+          transition: all 0.3s ease;
+        }
+        .userImg {
+          height: 41px;
+          width: 41px;
+          border: 1px solid #979797;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+        }
+      }
+      .register {
+        button {
+          position: relative;
+          padding: 5px;
+          font-size: 17px;
+          color: #4e72ca;
+          font-weight: 700;
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+            &::before {
+              position: absolute;
+              top: 8px;
+              right: 127px;
+              height: 16px;
+              width: 2px;
+              background: #4e72ca;
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+  .searchHolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    .searchForm {
+      .inputWrapper {
+        border-radius: 22px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid #adadad66;
+        .categorySelect {
+          width: 190px;
+          margin-right: 5px;
+        }
+        .searchLabel {
+          input {
+            width: 358px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 13px 24px 14px;
+            border: 1px solid #adadad66;
+            border-top: none;
+            border-bottom: none;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              color: #111;
+            }
+          }
+        }
+        .territorySelect {
+          width: 220px;
+          padding-left: 4px;
+          margin-right: 5px;
+        }
+        .searchBtn {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          padding: 15px 19px;
+          border-radius: 22px;
+          background: #19D476;
+        }
+      }
+    }
+    .addAnnounceLink {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding-right: 25px;
+      border-radius: 22px;
+      background: #19D476;
+      .plusIcon {
+        font-size: 28px;
+        padding: 7px 15px;
+        margin-right: 12px;
+        border-radius: 22px;
+        background: #11B463;
+      }
+    }
+  }
+}
