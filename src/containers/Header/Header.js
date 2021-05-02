@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import Select from 'react-select'
 
 // Data
-import { announceCategoryOptions, territoryOptions } from '../../assets/data/data'
+import { announceCategoryOptions, territoryOptions } from '../../assets/data'
 // Images
 import logo from '../../assets/images/logo.png'
 import avatar from '../../assets/images/avatar.png'
@@ -59,7 +59,7 @@ const Header = () => {
               <button type="button" disabled>Рус</button>
               <button type="button">O’z</button>
             </div>
-            {true ? (
+            {false ? (// token
               <button type="button" className={styles.profile}>
                 <h3 className={styles.userName}>Бекзод</h3>
                 <div className={styles.userImg}>
@@ -68,8 +68,8 @@ const Header = () => {
               </button>
             ) : (
               <div className={styles.register}>
-                <button type="button">Вход</button>
-                <button type="button">Регистрация</button>
+                <Link to="/register">Вход</Link>
+                <Link to="/register">Регистрация</Link>
               </div>
             )}
           </div>

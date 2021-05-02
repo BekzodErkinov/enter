@@ -1,11 +1,18 @@
+// Containers
+import AnnounceCategory from '../../containers/AnnounceCategory'
+import AnnounceListSection from '../../containers/AnnounceListSection'
+import RecCategoryBanner from '../../containers/RecCategoryBanner'
+
 // SCSS
 import styles from './Home.module.scss'
 
 const Home = () => {
   return (
-    <div className={styles.siteMain}>
-      <h1>SiteMain Token bo'sa kiriladi 😎</h1>
-    </div>
+    <main className={styles.home}>
+      <AnnounceCategory />
+      <AnnounceListSection />
+      <RecCategoryBanner />
+    </main>
   )
 }
 

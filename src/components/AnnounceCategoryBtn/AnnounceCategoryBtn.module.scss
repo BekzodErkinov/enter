@@ -1,0 +1,44 @@
+// Variables
+$svg-icon-width: 50px;
+$icon-default-bg: #B6CAFB;
+$icon-border-radius: 20px;
+$icon-bg-1: #B4E2E1;
+$icon-bg-2: #FF9E83;
+$icon-bg-3: #F7E233;
+$icon-bg-4: #F6DAC2;
+$font-size: 14px;
+
+.announceCategoryBtnHolder {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8px;
+  .icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $icon-default-bg;
+    border-radius: $icon-border-radius;
+  }
+  &:nth-child(3n) .icon {
+    background: $icon-bg-2;
+  }
+  &:nth-child(2n) .icon {
+    background: $icon-bg-1;
+  }
+  &:nth-child(4n) .icon {
+    background: $icon-bg-3;
+  }
+  &:nth-child(5n) .icon {
+    background: $icon-bg-4;
+  }
+  .title {
+    margin-top: 6px;
+    font-size: $font-size;
+    font-weight: 600;
+  }
+}

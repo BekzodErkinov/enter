@@ -1,0 +1,44 @@
+.announcementsListHolder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .announceList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .showMore {
+    width: 100%;
+    padding: 18px;
+    margin-top: 28px;
+    text-align: center;
+    border-top: 1px solid #b6cafb9b;
+    .showMoreBtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        .title {
+          color: #0037c2;
+        }
+        .icon {
+          svg {
+            stroke: #0037c2;
+          }
+        }
+      }
+      .title {
+        font-size: 15px;
+        color: #4E72CA;
+      }
+      .icon {
+        margin-left: 8px;
+        svg {
+          stroke: #627cc0;
+        }
+      }
+    }
+  }
+}

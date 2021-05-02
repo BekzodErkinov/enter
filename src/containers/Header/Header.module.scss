@@ -1,10 +1,10 @@
 .siteHeader {
-  // *{outline: 1px solid royalblue;}
+  padding: 14px 0 16px;
+  box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.0647645);
   .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 14px;
     .lead {
       display: flex;
       align-items: center;

@@ -10,15 +10,16 @@ import Header from './containers/Header'
 // Components
 import Loader from './components/Animation'
 // Lazy load Pages
-const Home          = lazy(() => import('./pages/Home'))
-const Help          = lazy(() => import('./pages/Help'))
-const Shops         = lazy(() => import('./pages/Shops'))
-const Profile       = lazy(() => import('./pages/Profile'))
-const Announce      = lazy(() => import('./pages/Announce'))
-const Business      = lazy(() => import('./pages/Business'))
-const Register      = lazy(() => import('./pages/Register'))
-const ErrorPage     = lazy(() => import('./pages/Error'))
-const Announcements = lazy(() => import('./pages/Announcements'))
+const Home           = lazy(() => import('./pages/Home'))
+const Help           = lazy(() => import('./pages/Help'))
+const Shops          = lazy(() => import('./pages/Shops'))
+const Profile        = lazy(() => import('./pages/Profile'))
+const Announce       = lazy(() => import('./pages/Announce'))
+const Business       = lazy(() => import('./pages/Business'))
+const Register       = lazy(() => import('./pages/Register'))
+const ErrorPage      = lazy(() => import('./pages/Error'))
+const Announcements  = lazy(() => import('./pages/Announcements'))
+const SingleAnnounce = lazy(() => import('./pages/SingleAnnounce'))
 
 function App() {
   // const [token, setToken] = useState(window.localStorage.getItem('sessionToken'))
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/announce" component={Announce} />
                 <Route path="/business" component={Business} />
                 <Route path="/announcements" component={Announcements} />
+                <Route path="/announcement/:announce_id" component={SingleAnnounce} />
                 <Route path="*" component={ErrorPage} />
               </Switch>
             </>
@@ -51,6 +53,7 @@ function App() {
               <Route path="/business" component={Business} />
               <Route path="/register" component={Register} />
               <Route path="/announcements" component={Announcements} />
+              <Route path="/announcement/:announce_id" component={SingleAnnounce} />
               <Route path="*" component={ErrorPage} />
             </Switch>
           )}
