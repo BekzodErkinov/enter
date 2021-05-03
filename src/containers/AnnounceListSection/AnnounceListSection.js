@@ -1,7 +1,10 @@
 import { useState } from 'react'
 
 // Data
-import { announcementsList } from '../../assets/data'
+import {
+  announceTypeControlButtons,
+  announcementsList
+} from '../../assets/data'
 // Containers
 import AnnounceTypeControl from '../../containers/AnnounceTypeControl'
 import AnnouncementsList from '../../containers/AnnouncementsList'
@@ -16,7 +19,11 @@ const AnnounceListSection = () => {
     <section className={styles.announceListSection}>
       <div className="container">
         {/* Announce type controller */}
-        <AnnounceTypeControl announceType={announceType} setAnnounceType={setAnnounceType} />
+        <AnnounceTypeControl
+          announceType={announceType}
+          setAnnounceType={setAnnounceType}
+          announceTypeControllers={announceTypeControlButtons}
+        />
 
         {/* Announce types */}
         {/* New announce */}

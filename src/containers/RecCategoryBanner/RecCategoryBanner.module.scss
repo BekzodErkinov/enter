@@ -1,0 +1,21 @@
+.recCategoryBannerHolder {
+  padding: 50px 0 42px;
+  background: rgba(182, 202, 251, 0.159986);
+  box-shadow: inset 0px 21px 13px rgba(182, 202, 251, 0.225402);
+  .slickHolder {
+    *{outline: none;}
+    width: 90vw;
+    margin-left: 7em;
+    .slickSlider {
+      .banner {
+        width: 360px;
+        height: 238px;
+        margin: 0 20px;
+        img {
+          width: 360px;
+          height: 238px;
+        }
+      }
+    }
+  }
+}

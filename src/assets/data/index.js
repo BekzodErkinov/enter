@@ -78,16 +78,56 @@ const territoryOptions = [
 
 /* Announce Categories (Dropdown) */
 const announceCategories = [
-  { icon: <PlaneIcon/>, title: 'Транспорт'},
-  { icon: <StoreIcon/>, title: 'Недвижимость'},
-  { icon: <TerminalIcon/>, title: 'Электроника'},
-  { icon: <BriefcaseIcon/>, title: 'Работа'},
-  { icon: <GiftsIcon/>, title: 'Личные вещи'},
-  { icon: <ChallengeIcon/>, title: 'Дом и Сад'},
-  { icon: <InMaintenanceIcon/>, title: 'Стройка и ремонт'},
-  { icon: <GamingIcon/>, title: 'Хобби и Спорт'},
-  { icon: <ManIcon/>, title: 'Бизнес и услуги'},
-  { icon: <img src="https://img.icons8.com/wired/50/3D3D63/teddy-bear.png" alt="Teddy bear"/>, title: 'Детский мир'},
+  {
+    id: 1,
+    icon: <PlaneIcon/>,
+    title: 'Транспорт'
+  },
+  {
+    id: 2,
+    icon: <StoreIcon/>,
+    title: 'Недвижимость'
+  },
+  {
+    id: 3,
+    icon: <TerminalIcon/>,
+    title: 'Электроника'
+  },
+  {
+    id: 4,
+    icon: <BriefcaseIcon/>,
+    title: 'Работа'
+  },
+  {
+    id: 5,
+    icon: <GiftsIcon/>,
+    title: 'Личные вещи'
+  },
+  {
+    id: 6,
+    icon: <ChallengeIcon/>,
+    title: 'Дом и Сад'
+  },
+  {
+    id: 7,
+    icon: <InMaintenanceIcon/>,
+    title: 'Стройка и ремонт'
+  },
+  {
+    id: 8,
+    icon: <GamingIcon/>,
+    title: 'Хобби и Спорт'
+  },
+  {
+    id: 9,
+    icon: <ManIcon/>,
+    title: 'Бизнес и услуги'
+  },
+  {
+    id: 10,
+    icon: <img src="https://img.icons8.com/wired/50/3D3D63/teddy-bear.png" alt="Teddy bear"/>,
+    title: 'Детский мир'
+  },
 ]
 
 /* Announce Type Controller Buttons - Home > AnnounceTypeControl */
@@ -492,12 +532,56 @@ const announcementsList = [
 
 /* Recommended Announcements Category Banner */
 const recCategoriesBanner = [
-  { img: recCategory1, },
-  { img: recCategory2, },
-  { img: recCategory3, },
-  { img: recCategory4, },
+  {
+    category: 'tech',
+    img: recCategory1,
+  },
+  {
+    category: 'clothes',
+    img: recCategory2,
+  },
+  {
+    category: 'office',
+    img: recCategory3,
+  },
+  {
+    category: 'business',
+    img: recCategory4,
+  },
+  {
+    category: 'tech',
+    img: recCategory1,
+  },
+  {
+    category: 'clothes',
+    img: recCategory2,
+  },
+  {
+    category: 'office',
+    img: recCategory3,
+  },
+  {
+    category: 'business',
+    img: recCategory4,
+  },
 ]
 
+
+/* Recommended Announce Type Controller Buttons - Home > RecAnnounceListSection */
+const recAnnounceTypeControlButtons = [
+  {
+    value: 'viewed',
+    title: 'Просмотренные',
+  },
+  {
+    value: 'editorsChoice',
+    title: 'Выбор редакции',
+  },
+  {
+    value: 'reducedPrices',
+    title: 'Сниженные цены',
+  },
+]
 
 /* Seen Announcements */
 const seenAnnouncements = [
@@ -536,7 +620,7 @@ const seenAnnouncements = [
 ]
 
 
-/* Announcements Category */
+/* Announcements Category Links - Footer */
 const announcementsCategory = [
   ['Автомобили', [
     'Легковые авто',
@@ -648,6 +732,7 @@ export {
   announceTypeControlButtons,
   announcementsList,
   recCategoriesBanner,
+  recAnnounceTypeControlButtons,
   seenAnnouncements,
   announcementsCategory,
 }

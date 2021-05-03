@@ -21,21 +21,21 @@ $font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $icon-default-bg;
+    // background: $icon-default-bg;
     border-radius: $icon-border-radius;
   }
-  &:nth-child(3n) .icon {
-    background: $icon-bg-2;
-  }
-  &:nth-child(2n) .icon {
-    background: $icon-bg-1;
-  }
-  &:nth-child(4n) .icon {
-    background: $icon-bg-3;
-  }
-  &:nth-child(5n) .icon {
-    background: $icon-bg-4;
-  }
+  // &:nth-child(3n) .icon {
+  //   background: $icon-bg-2;
+  // }
+  // &:nth-child(2n) .icon {
+  //   background: $icon-bg-1;
+  // }
+  // &:nth-child(4n) .icon {
+  //   background: $icon-bg-3;
+  // }
+  // &:nth-child(5n) .icon {
+  //   background: $icon-bg-4;
+  // }
   .title {
     margin-top: 6px;
     font-size: $font-size;

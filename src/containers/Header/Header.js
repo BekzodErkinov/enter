@@ -42,12 +42,10 @@ const Header = () => {
     <header className={styles.siteHeader}>
       <div className="container">
         <div className={styles.navigation}>
-          <div className={styles.lead}>
-            <Link to="/" title="kivi - домашняя страница бесплатных объявлений">
-              <img width="67" height="67" src={logo} alt="kivi" />
-            </Link>
+          <Link to="/" className={styles.lead} title="kivi - домашняя страница бесплатных объявлений">
+            <img width="67" height="67" src={logo} alt="kivi" />
             <h2>Продай, найди, купи все что пожелаешь…</h2>
-          </div>
+          </Link>
           <div className={styles.navLinksHolder}>
             <nav className={styles.navLinks}>
               <Link to="/announcements">Объявления</Link>
@@ -68,7 +66,7 @@ const Header = () => {
               </button>
             ) : (
               <div className={styles.register}>
-                <Link to="/register">Вход</Link>
+                <Link to="/login">Вход</Link>
                 <Link to="/register">Регистрация</Link>
               </div>
             )}

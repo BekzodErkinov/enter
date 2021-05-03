@@ -39,10 +39,10 @@ const AnnounceCategory = () => {
   const announceSettings = {
     dots: false,
     speed: 500,
-    infinite: false,
+    infinite: true,
     slidesToShow: 8,
     swipeToSlide: false,
-    slidesToScroll: 8,
+    slidesToScroll: 1,
     prevArrow: <PrevArrow styles={prevArrowStyle} />,
     nextArrow: <NextArrow styles={nextArrowStyle} />,
     touchThreshold: 6,
@@ -53,9 +53,10 @@ const AnnounceCategory = () => {
       <div className="container">
         <div className={styles.slickHolder}>
           <SlickSlider settings={announceSettings}>
-            {announceCategories.map((item,index) => (
+            {announceCategories.map(item => (
               <AnnounceCategoryBtn
-                key={index}
+                key={item.id}
+                id={item.id}
                 icon={item.icon}
                 title={item.title}
               />

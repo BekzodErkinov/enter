@@ -11,6 +11,7 @@
       justify-content: flex-start;
       h2 {
         width: 152px;
+        color: #111;
         font-size: 15px;
         font-weight: 700;
         line-height: 17px;
@@ -95,7 +96,7 @@
         }
       }
       .register {
-        button {
+        a {
           position: relative;
           padding: 5px;
           font-size: 17px;
@@ -111,6 +112,7 @@
               height: 16px;
               width: 2px;
               background: #4e72ca;
+              z-index: -1;
               content: '';
             }
           }

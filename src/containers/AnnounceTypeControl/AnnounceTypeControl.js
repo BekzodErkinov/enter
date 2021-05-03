@@ -1,13 +1,10 @@
-// Data
-import { announceTypeControlButtons } from '../../assets/data'
-
 // SCSS
 import styles from './AnnounceTypeControl.module.scss'
 
-const AnnounceTypeControl = ({ announceType, setAnnounceType }) => {
+const AnnounceTypeControl = ({ announceTypeControllers, announceType, setAnnounceType }) => {
   return (
     <div className={styles.announceTypeControlHolder}>
-      {announceTypeControlButtons.map((btn, i) => (
+      {announceTypeControllers.map((btn, i) => (
         <button
           key={i}
           type="button"

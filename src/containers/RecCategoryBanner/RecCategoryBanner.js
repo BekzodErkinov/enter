@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 // Data
 import { recCategoriesBanner } from '../../assets/data'
 // Components
@@ -8,49 +10,35 @@ import styles from './RecCategoryBanner.module.scss'
 
 // Recommended Category Banner
 const RecCategoryBanner = () => {
-    // Slide Control buttons style
-  // Arrow general styles
-  // const arrowStyle = {
-  //   width: 34,
-  //   height: 34,
-  //   boxShadow: '1px 3px 6px rgba(0, 0, 0, 0.12)',
-  //   background: '#fff',
-  //   borderRadius: '50%',
-  //   backgroundSize: '80%',
-  //   backgroundRepeat: 'no-repeat',
-  //   backgroundPosition: 'center',
-  // }
-  // Specific styles
-  // const prevArrowStyle = {
-  //   ...arrowStyle,
-  //   backgroundImage: `url(${slickPrevArrow})`,
-  // }
-  // const nextArrowStyle = {
-  //   ...arrowStyle,
-  //   backgroundImage: `url(${slickNextArrow})`,
-  // }
-
   // Slide Settings
-  const announceSettings = {
+  const settings = {
     dots: false,
     speed: 500,
-    infinite: false,
-    slidesToShow: 8,
+    arrows: false,
+    autoPlay: true,
+    infinite: true,
+    autoPlaySpeed: 2000,
+    slidesToShow: 3,
     swipeToSlide: false,
-    slidesToScroll: 8,
-    // prevArrow: <PrevArrow styles={prevArrowStyle} />,
-    // nextArrow: <NextArrow styles={nextArrowStyle} />,
-    touchThreshold: 6,
+    slidesToScroll: 1,
+    touchThreshold: 100,
   }
 
   return (
     <div className={styles.recCategoryBannerHolder}>
       <div className={styles.slickHolder}>
-        <SlickSlider settings={announceSettings}>
-          <h1>1</h1>
-          <h1>1</h1>
-          <h1>1</h1>
-          <h1>1</h1>
+        <SlickSlider
+          settings={settings}
+          className={styles.slickSlider}>
+          {recCategoriesBanner.map((announce, index) => (
+            <Link
+              to="#"
+              key={index}
+              className={styles.banner}
+            >
+              <img width="360" height="238" src={announce.img} alt="Banner"/>
+            </Link>
+          ))}
         </SlickSlider>
       </div>
     </div>

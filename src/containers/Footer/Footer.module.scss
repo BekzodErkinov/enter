@@ -1,4 +1,55 @@
+// Variables
+$color: #fff;
+$footer-bg: #282B30;
+
+$lead-title-font-size: 14px;
+$lead-title-color: #ffffff46;
+
+$info-font-size: 14px;
+$info-color: #98A4B7;
+
 .siteFooter {
-  color: #fff;
-  background: #111;
+  color: $color;
+  background: $footer-bg;
+  padding: 23px 0;
+  .footerHolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .lead {
+      display: flex;
+      align-items: center;
+      img {
+        width: 67px;
+        height: 67px;
+      }
+      h3 {
+        width: 150px;
+        font-size: $lead-title-font-size;
+        font-weight: 600;
+        margin-left: 14px;
+        color: $lead-title-color;
+      }
+    }
+    .info {
+      width: 340px;
+      padding: 10px;
+      font-size: $info-font-size;
+      font-weight: 500;
+      color: $info-color;
+    }
+    .links {
+      display: flex;
+      align-items: center;
+      a {
+        img {
+          width: 177px;
+          height: 55px;
+        }
+        &:first-child {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
 }
