@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Suspense fallback={<div className="center">{<Loader/>}</div>}>
+        <Suspense fallback={<div className="loader-animation">{<Loader/>}</div>}>
           {true ? (
             <>
               <Header />

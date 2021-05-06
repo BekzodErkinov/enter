@@ -1,4 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+
+// Containers
+import FooterLinks from '../FooterLinks'
 
 // Images
 import logo from '../../assets/images/logo2.png'
@@ -9,8 +12,10 @@ import googlePlay from '../../assets/images/buttonAndroid.png'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
+  const location = useLocation()
+
   return (
-    <footer className={styles.siteFooter}>
+    <div className={styles.siteFooter}>
       <div className="container">
         <div className={styles.footerHolder}>
           <Link to="/" className={styles.lead} title="kivi - домашняя страница бесплатных объявлений">
@@ -27,8 +32,14 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        {/* Footer Links */}
+        {location.pathname === '/register' ||
+          location.pathname === '/profile' ||
+          location.pathname === '/announce' ||
+          <FooterLinks /> }
       </div>
-    </footer>
+    </div>
   )
 }
 

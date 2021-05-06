@@ -620,7 +620,7 @@ const seenAnnouncements = [
 ]
 
 
-/* Announcements Category Links - Footer */
+/* Announcements Category Links - Footer > FooterLinks */
 const announcementsCategory = [
   ['Автомобили', [
     'Легковые авто',

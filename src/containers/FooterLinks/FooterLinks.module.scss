@@ -1,0 +1,123 @@
+// Variables
+// Links title
+$categoryTitle-color: #fff;
+$categoryTitle-hover-color: #05F3B3;
+$categoryTitle-font-size: 14px;
+// Links | Lower Links
+$link-color: #878F99;
+$link-hover-color: #05F3B3;
+$link-font-size: 14px;
+// Links ">" Mark
+$right-arrow-color-1: #FF5469;
+$right-arrow-color-2: #F8E71C;
+$right-arrow-color-3: #F5A623;
+$right-arrow-color-4: #4A90E2;
+$right-arrow-color-5: #50E3C2;
+$right-arrow-color-6: #BD10E0;
+$right-arrow-color-7: #7ED321;
+// Show More Buttons
+$showMoreBtn-color: #66717A;
+$showMoreBtn-hover-color: #6a90af;
+$showMoreBtn-font-size: 15px;
+
+
+.footerLinksHolder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .linksList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 50px;
+    &.hide {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .linksItem {
+      width: 260px;
+      padding: 5px;
+      margin-bottom: 25px;
+
+      .categoryTitle {
+        position: relative;
+        color: $categoryTitle-color;
+        font-size: $categoryTitle-font-size;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        &::before {
+          position: absolute;
+          top: -10.5px;
+          left: -18px;
+          font-size: 30px;
+          content: '\203A';
+        }
+        &:hover {
+          color: $categoryTitle-hover-color;
+        }
+      }
+      .links {
+        line-height: 29px;
+        .link {
+          color: $link-color;
+          display: block;
+          font-size: $link-font-size;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $link-hover-color;
+          }
+        }
+      }
+    }
+  }
+
+  .showHideBtn {
+    width: 100%;
+    .showMoreBtn,
+    .lessBtn {
+      display: flex;
+      align-items: center;
+      &:hover {
+        .title {
+          color: $showMoreBtn-hover-color;
+        }
+      }
+      .title {
+        color: $showMoreBtn-color;
+        font-size: $showMoreBtn-font-size;
+        margin-right: 8px;
+        transition: all 0.3s ease;
+      }
+    }
+    .showBtnWrap,
+    .lessBtnWrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 0 34px;
+    }
+    .showBtnWrap {
+      box-shadow: 0 -8px 10px -10px #191919c7;
+    }
+  }
+
+  .lowerLinks {
+    width: 100%;
+    padding: 27px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #4C565E;
+    a {
+      color: $link-color;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
