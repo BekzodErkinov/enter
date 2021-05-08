@@ -12,22 +12,22 @@ import {
 } from '../../assets/icons'
 
 /* Announcements */
-import announceImg1 from '../images/announce1.png'
-import announceImg2 from '../images/announce2.png'
-import announceImg3 from '../images/announce3.png'
-import announceImg4 from '../images/announce4.png'
-import announceImg5 from '../images/announce5.png'
-import announceImg6 from '../images/announce6.png'
-import announceImg7 from '../images/announce7.png'
-import announceImg8 from '../images/announce8.png'
-import announceImg9 from '../images/announce9.png'
-import announceImg10 from '../images/announce10.png'
-import announceImg11 from '../images/announce11.png'
-import announceImg12 from '../images/announce12.jpg'
-import announceImg13 from '../images/announce13.jpg'
-import announceImg14 from '../images/announce14.jpg'
-import announceImg15 from '../images/announce15.jpg'
-import announceImg16 from '../images/announce16.jpg'
+import announceImg1 from '../images/announce16.jpg'
+import announceImg2 from '../images/announce15.jpg'
+import announceImg3 from '../images/announce14.jpg'
+import announceImg4 from '../images/announce13.jpg'
+import announceImg5 from '../images/announce12.jpg'
+import announceImg6 from '../images/announce11.png'
+import announceImg7 from '../images/announce10.png'
+import announceImg8 from '../images/announce9.png'
+import announceImg9 from '../images/announce8.png'
+import announceImg10 from '../images/announce7.png'
+import announceImg11 from '../images/announce6.png'
+import announceImg12 from '../images/announce5.png'
+import announceImg13 from '../images/announce1.png'
+import announceImg14 from '../images/announce3.png'
+import announceImg15 from '../images/announce2.png'
+import announceImg16 from '../images/announce4.png'
 
 /* Recommended Announcements Category Banner */
 import recCategory1 from '../images/recCategory1.jpg'
@@ -40,6 +40,12 @@ import seenAnnounce1 from '../images/seenAnnounce1.png'
 import seenAnnounce2 from '../images/seenAnnounce2.png'
 import seenAnnounce3 from '../images/seenAnnounce3.png'
 import seenAnnounce4 from '../images/seenAnnounce4.png'
+
+/* Similar Announcements - SingleAnnounce */
+import similarAnnounce1 from '../images/similarAnnounce1.png'
+import similarAnnounce2 from '../images/similarAnnounce2.png'
+import similarAnnounce3 from '../images/similarAnnounce3.png'
+import similarAnnounce4 from '../images/similarAnnounce4.png'
 
 
 /* Announce Select-Options - Header > Search */
@@ -151,6 +157,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'iPhone 6/6+ 16/64/128 Гб (Магазин 1 год гарантии)',
     currency: 'uzs',
+    appearances: [
+      announceImg1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 2,
@@ -159,6 +172,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Маркетолог. Консультирование. Настройка рекламы',
     currency: 'uzs',
+    appearances: [
+      announceImg2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 3,
@@ -167,6 +187,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Требуется администратор в Отел',
     currency: 'uzs',
+    appearances: [
+      announceImg3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 4,
@@ -175,6 +202,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Велосипед Merida Big Seven 70 D',
     currency: 'uzs',
+    appearances: [
+      announceImg4,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 5,
@@ -183,6 +217,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Женский, комфортный велосипед из Германии',
     currency: 'uzs',
+    appearances: [
+      announceImg5,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 6,
@@ -191,6 +232,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Коньки раздвижные Galaxy р-р 36-39',
     currency: 'uzs',
+    appearances: [
+      announceImg6,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 7,
@@ -199,6 +247,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Продам свою гоночный байк Mongoose',
     currency: 'uzs',
+    appearances: [
+      announceImg7,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 8,
@@ -207,6 +262,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: '1-к квартира, 47 м², 7/18 эт.',
     currency: 'uzs',
+    appearances: [
+      announceImg8,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 9,
@@ -215,6 +277,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Торговое помещение, 10 м²',
     currency: 'uzs',
+    appearances: [
+      announceImg9,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 10,
@@ -223,6 +292,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Двигатели моторы головки кпп турбины тнвд гарантия',
     currency: 'uzs',
+    appearances: [
+      announceImg10,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 11,
@@ -231,6 +307,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Toyota Camry, 2002',
     currency: 'uzs',
+    appearances: [
+      announceImg11,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 12,
@@ -239,6 +322,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Сборочный комплект камаз 43118',
     currency: 'uzs',
+    appearances: [
+      announceImg12,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 13,
@@ -247,6 +337,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Продам легендарный BMW K1200S',
     currency: 'uzs',
+    appearances: [
+      announceImg13,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 14,
@@ -255,6 +352,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Плиточник',
     currency: 'uzs',
+    appearances: [
+      announceImg14,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 15,
@@ -263,6 +367,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Мастер регулировка дверей замена замков',
     currency: 'uzs',
+    appearances: [
+      announceImg15,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 16,
@@ -271,14 +382,28 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Овощная компания. Доставка свежих овощей и фруктов',
     currency: 'uzs',
+    appearances: [
+      announceImg16,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
-{
+  {
     id: 17,
     img: announceImg1,
     cost: 39000000,
     date: 'Вчера 22:55',
     title: 'iPhone 6/6+ 16/64/128 Гб (Магазин 1 год гарантии)',
     currency: 'uzs',
+    appearances: [
+      announceImg1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 18,
@@ -287,6 +412,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Маркетолог. Консультирование. Настройка рекламы',
     currency: 'uzs',
+    appearances: [
+      announceImg2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 19,
@@ -295,6 +427,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Требуется администратор в Отел',
     currency: 'uzs',
+    appearances: [
+      announceImg3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 20,
@@ -303,6 +442,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Велосипед Merida Big Seven 70 D',
     currency: 'uzs',
+    appearances: [
+      announceImg4,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 21,
@@ -311,6 +457,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Женский, комфортный велосипед из Германии',
     currency: 'uzs',
+    appearances: [
+      announceImg5,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 22,
@@ -319,6 +472,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Коньки раздвижные Galaxy р-р 36-39',
     currency: 'uzs',
+    appearances: [
+      announceImg6,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 23,
@@ -327,6 +487,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Продам свою гоночный байк Mongoose',
     currency: 'uzs',
+    appearances: [
+      announceImg7,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 24,
@@ -335,6 +502,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: '1-к квартира, 47 м², 7/18 эт.',
     currency: 'uzs',
+    appearances: [
+      announceImg8,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 25,
@@ -343,6 +517,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Торговое помещение, 10 м²',
     currency: 'uzs',
+    appearances: [
+      announceImg9,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 26,
@@ -351,6 +532,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Двигатели моторы головки кпп турбины тнвд гарантия',
     currency: 'uzs',
+    appearances: [
+      announceImg10,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 27,
@@ -359,6 +547,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Toyota Camry, 2002',
     currency: 'uzs',
+    appearances: [
+      announceImg11,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 28,
@@ -367,6 +562,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Сборочный комплект камаз 43118',
     currency: 'uzs',
+    appearances: [
+      announceImg12,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 29,
@@ -375,6 +577,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Продам легендарный BMW K1200S',
     currency: 'uzs',
+    appearances: [
+      announceImg13,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 30,
@@ -383,6 +592,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Плиточник',
     currency: 'uzs',
+    appearances: [
+      announceImg14,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 31,
@@ -391,6 +607,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Мастер регулировка дверей замена замков',
     currency: 'uzs',
+    appearances: [
+      announceImg15,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 32,
@@ -399,6 +622,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Овощная компания. Доставка свежих овощей и фруктов',
     currency: 'uzs',
+    appearances: [
+      announceImg16,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 33,
@@ -407,6 +637,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'iPhone 6/6+ 16/64/128 Гб (Магазин 1 год гарантии)',
     currency: 'uzs',
+    appearances: [
+      announceImg1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 34,
@@ -415,6 +652,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Маркетолог. Консультирование. Настройка рекламы',
     currency: 'uzs',
+    appearances: [
+      announceImg2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 35,
@@ -423,6 +667,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Требуется администратор в Отел',
     currency: 'uzs',
+    appearances: [
+      announceImg3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 36,
@@ -431,6 +682,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Велосипед Merida Big Seven 70 D',
     currency: 'uzs',
+    appearances: [
+      announceImg4,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 37,
@@ -439,6 +697,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Женский, комфортный велосипед из Германии',
     currency: 'uzs',
+    appearances: [
+      announceImg5,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 38,
@@ -447,6 +712,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Коньки раздвижные Galaxy р-р 36-39',
     currency: 'uzs',
+    appearances: [
+      announceImg6,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 39,
@@ -455,6 +727,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Продам свою гоночный байк Mongoose',
     currency: 'uzs',
+    appearances: [
+      announceImg7,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 40,
@@ -463,6 +742,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: '1-к квартира, 47 м², 7/18 эт.',
     currency: 'uzs',
+    appearances: [
+      announceImg8,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 41,
@@ -471,6 +757,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Торговое помещение, 10 м²',
     currency: 'uzs',
+    appearances: [
+      announceImg9,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 42,
@@ -479,6 +772,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Двигатели моторы головки кпп турбины тнвд гарантия',
     currency: 'uzs',
+    appearances: [
+      announceImg10,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 43,
@@ -487,6 +787,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Toyota Camry, 2002',
     currency: 'uzs',
+    appearances: [
+      announceImg11,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 44,
@@ -495,6 +802,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Сборочный комплект камаз 43118',
     currency: 'uzs',
+    appearances: [
+      announceImg12,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 45,
@@ -503,6 +817,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Продам легендарный BMW K1200S',
     currency: 'uzs',
+    appearances: [
+      announceImg13,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 46,
@@ -511,6 +832,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Плиточник',
     currency: 'uzs',
+    appearances: [
+      announceImg14,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 47,
@@ -519,6 +847,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Мастер регулировка дверей замена замков',
     currency: 'uzs',
+    appearances: [
+      announceImg15,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 48,
@@ -527,6 +862,13 @@ const announcementsList = [
     date: 'Вчера 22:55',
     title: 'Овощная компания. Доставка свежих овощей и фруктов',
     currency: 'uzs',
+    appearances: [
+      announceImg16,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
 ]
 
@@ -592,6 +934,13 @@ const seenAnnouncements = [
     date: 'Вчера 22:55',
     title: 'Светодиодная лампа с фронтальным стеклом 10шт',
     currency: 'uzs',
+    appearances: [
+      seenAnnounce1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 2,
@@ -600,6 +949,13 @@ const seenAnnouncements = [
     date: 'Вчера 22:55',
     title: 'Коттедж 424 м² на участке 22.6 сот.',
     currency: 'uzs',
+    appearances: [
+      seenAnnounce2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 3,
@@ -608,6 +964,13 @@ const seenAnnouncements = [
     date: 'Вчера 22:55',
     title: '2-к квартира, 55 м², 3/5 эт.',
     currency: 'uzs',
+    appearances: [
+      seenAnnounce3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
   {
     id: 4,
@@ -616,6 +979,13 @@ const seenAnnouncements = [
     date: 'Вчера 22:55',
     title: 'Кровать с закроватным модулем+ матрас Вита 160',
     currency: 'uzs',
+    appearances: [
+      seenAnnounce4,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
   },
 ]
 
@@ -725,6 +1095,266 @@ const announcementsCategory = [
 ]
 
 
+/* Recommended Announce Type Controller Buttons - Home > RecAnnounceListSection */
+const singleAnnounceTypeControlButtons = [
+  {
+    value: 'similarAnnounce',
+    title: 'Похожие объявления',
+  },
+  {
+    value: 'authorAnnounce',
+    title: 'Объявления автора',
+  },
+]
+
+/* Similar Announcements - SingleAnnounce */
+const singleAnnouncements = [
+  {
+    id: 1,
+    img: similarAnnounce1,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 2,
+    img: similarAnnounce2,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 3,
+    img: similarAnnounce3,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 4,
+    img: similarAnnounce4,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce4,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 5,
+    img: announceImg1,
+    cost: 39000000,
+    date: 'Вчера 22:55',
+    title: 'iPhone 6/6+ 16/64/128 Гб (Магазин 1 год гарантии)',
+    currency: 'uzs',
+    appearances: [
+      announceImg1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 6,
+    img: announceImg13,
+    cost: 39000000,
+    date: 'Вчера 22:55',
+    title: 'Коньки раздвижные Galaxy р-р 36-39',
+    currency: 'uzs',
+    appearances: [
+      announceImg13,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 7,
+    img: similarAnnounce3,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 8,
+    img: seenAnnounce2,
+    cost: 300000000,
+    date: 'Вчера 22:55',
+    title: '2-к квартира, 55 м², 3/5 эт.',
+    currency: 'uzs',
+    appearances: [
+      seenAnnounce2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+]
+
+const singleAnnouncements2 = [
+  {
+    id: 1,
+    img: seenAnnounce2,
+    cost: 300000000,
+    date: 'Вчера 22:55',
+    title: '2-к квартира, 55 м², 3/5 эт.',
+    currency: 'uzs',
+    appearances: [
+      seenAnnounce2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 2,
+    img: similarAnnounce3,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 3,
+    img: announceImg13,
+    cost: 39000000,
+    date: 'Вчера 22:55',
+    title: 'Коньки раздвижные Galaxy р-р 36-39',
+    currency: 'uzs',
+    appearances: [
+      announceImg13,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 4,
+    img: announceImg1,
+    cost: 39000000,
+    date: 'Вчера 22:55',
+    title: 'iPhone 6/6+ 16/64/128 Гб (Магазин 1 год гарантии)',
+    currency: 'uzs',
+    appearances: [
+      announceImg1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 5,
+    img: similarAnnounce4,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce4,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 6,
+    img: similarAnnounce3,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce3,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 7,
+    img: similarAnnounce2,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce2,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+  {
+    id: 8,
+    img: similarAnnounce1,
+    cost: 5000000,
+    date: 'Вчера 22:55',
+    title: 'Овощная компания. Доставка свежих овощей и фруктов',
+    currency: 'uzs',
+    appearances: [
+      similarAnnounce1,
+      'https://picsum.photos/400?random=1',
+      'https://picsum.photos/400?random=2',
+      'https://picsum.photos/400?random=3',
+      'https://picsum.photos/400?random=4',
+    ],
+  },
+]
+
+
 export {
   announceCategoryOptions,
   territoryOptions,
@@ -735,4 +1365,7 @@ export {
   recAnnounceTypeControlButtons,
   seenAnnouncements,
   announcementsCategory,
+  singleAnnounceTypeControlButtons,
+  singleAnnouncements,
+  singleAnnouncements2,
 }

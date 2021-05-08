@@ -31,10 +31,12 @@ const RecAnnounceListSection = () => {
           <AnnouncementsList showCount='4' announcementsList={seenAnnouncements} />}
 
         {/* Editor's Choice */}
-        {recAnnounceType === 'editorsChoice' && <h1>Выбор редакции</h1>}
+        {recAnnounceType === 'editorsChoice' &&
+          <AnnouncementsList showCount='2' announcementsList={seenAnnouncements} />}
 
         {/* Reduced Prices Type */}
-        {recAnnounceType === 'reducedPrices' && <h1>Сниженные цены</h1>}
+        {recAnnounceType === 'reducedPrices' &&
+          <AnnouncementsList showCount='3' announcementsList={seenAnnouncements} />}
       </div>
     </section>
   )

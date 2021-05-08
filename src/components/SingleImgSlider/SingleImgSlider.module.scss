@@ -1,0 +1,28 @@
+.singleImgSliderHolder {
+  max-height: 460px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .sliderControls {
+    width: 90px;
+    .sliderControl {
+      height: 83px;
+      border-radius: 4px;
+      cursor: pointer;
+      img {
+        border-radius: 4px;
+      }
+    }
+  }
+  .slideHolder {
+    width: 440px;
+    height: 440px;
+    .slide {
+      cursor: w-resize;
+      img {
+        border-radius: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,301 @@
+// Variables
+// Breadcrumbs
+$breadcrumb-color: #787993;
+$breadcrumb-hover-color: #3a64c7;
+// Announce
+$announce-font-color: #414D6A;
+// About Announce lead
+$about-announce-lead-color: #414D6A;
+// Cost
+$cost-color: #444;
+// Address
+$address-color: #4E72CA;
+$address-hover-color: #0059ff;
+// Phone Number
+$phoneNum-color: #111;
+$phoneNum-bg: #65E99F;
+$phoneNum-radius: 19px;
+$phoneNum-btn-bg: #41D481;
+$phoneNum-btn-hover-bg: #32be6f;
+// Announcer
+$announcer-color: #111;
+$announcer-link-color: #2AAE63;
+$announcer-link-hover-color: #17914c;
+// Double Buttons
+$btn-color: #fff;
+$btn-bg-color: #4E72CA;
+$btn-hover-bg-color: #304FFF;
+$btn-radius: 23px;
+// Table
+$table-item-color: #444;
+$table-item-border: rgba(151, 151, 151, 0.250226);
+$table-item-link-color: #4E72CA;
+$table-item-link-hover-color: #579aff;
+// About
+$about-btn-color: #f00;
+$about-btn-hover-color: #ce0000;
+
+
+.singleAnnounceHolder {
+  // Breadcrumbs
+  .breadcrumbs {
+    margin-top: 24px;
+    .breadcrumb {
+      color: $breadcrumb-color;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $breadcrumb-hover-color;
+      }
+      &:last-child {
+        &:hover {
+          color: $breadcrumb-color;
+        }
+      }
+    }
+    .slash {
+      color: $breadcrumb-color;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+  }
+
+  // <article>
+  .aboutAnnounce {
+    margin-top: 20px;
+    .announceTitle {
+      color: $announce-font-color;
+      font-size: 34px;
+      font-weight: 500;
+    }
+    // <main>
+    .announceContent {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 14px;
+      // <section>
+      .leftSide {
+        width: 50%;
+        padding: 0 10px;
+      }
+
+      // <section>
+      .rightSide {
+        width: 50%;
+        padding: 0 10px;
+        // Lead
+        .lead {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h4 {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+        // Cost
+        .cost {
+          color: $cost-color;
+          font-size: 40px;
+          font-weight: 500;
+          margin-top: 17px;
+        }
+        // Address
+        .address {
+          margin-top: 8px;
+          a {
+            color: $address-color;
+            font-size: 14px;
+            transition: all 0.3s ease;
+          }
+          &:hover {
+            a {
+              color: $address-hover-color;
+            }
+          }
+        }
+        // Phone Number
+        .phoneNumWrap {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          color: $phoneNum-color;
+          margin-top: 20px;
+          .secondPhoneNumWrap {
+            margin-top: 7px;
+          }
+          .firstPhoneNumWrap,
+          .secondPhoneNumWrap {
+            display: flex;
+            align-items: center;
+            border-radius: $phoneNum-radius;
+            background: $phoneNum-bg;
+          }
+          .firstPhoneNum,
+          .secondPhoneNum {
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 16px;
+            font-weight: 700;
+            margin-right: 12px;
+            padding-left: 23px;
+          }
+          .hideStyle {
+            font-size: 20px;
+            letter-spacing: 3px;
+            margin-left: 10px;
+          }
+          .showHideBtn {
+            font-size: 15px;
+            font-weight: 400;
+            padding: 12px 26px 13px 20px;
+            background: $phoneNum-btn-bg;
+            border-radius: $phoneNum-radius;
+            transition: all 0.3s ease;
+            &:hover {
+              background: $phoneNum-btn-hover-bg;
+            }
+          }
+        }
+        // Announcer
+        .announcer {
+          margin-top: 17px;
+          .title {
+            color: $announcer-color;
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 7px;
+          }
+          .link {
+            color: $announcer-link-color;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $announcer-link-hover-color;
+            }
+          }
+        }
+        // Double Button
+        .btnWrap {
+          display: flex;
+          align-items: center;
+          margin-top: 24px;
+          button {
+            font-size: 14px;
+            font-weight: 700;
+            margin-right: 11px;
+            padding: 14px 28px 15px;
+            color: $btn-color;
+            background: $btn-bg-color;
+            border-radius: $btn-radius;
+            transition: all 0.5s ease;
+            &:hover {
+              background: $btn-hover-bg-color;
+            }
+          }
+        }
+        // Table
+        .table {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: stretch;
+          justify-content: stretch;
+          margin-top: 25px;
+          .item {
+            width: 180px;
+            min-height: 78px;
+            padding: 13px 17px;
+            border: 1px solid transparent;
+            border-left-color: $table-item-border;
+            border-bottom-color: $table-item-border;
+            .title {
+              font-size: 14px;
+              color: $table-item-color;
+              margin-bottom: 5px;
+            }
+            .value {
+              color: $table-item-color;
+              font-size: 18px;
+            }
+            .link {
+              font-size: 18px;
+              font-weight: 500;
+              color: $table-item-link-color;
+              text-decoration: underline;
+              transition: all 0.3s ease;
+              &:hover {
+                color: $table-item-link-hover-color;
+              }
+            }
+          }
+        }
+        .tableAddress {
+          padding: 13px 17px;
+          border: 1px solid transparent;
+          border-left-color: $table-item-border;
+          .title {
+            color: $table-item-color;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+          .link {
+            font-size: 18px;
+            font-weight: 500;
+            color: $table-item-link-color;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $table-item-link-hover-color;
+            }
+          }
+        }
+        // <blockquote>
+        .description {
+          margin: 30px 0 0;
+          .txt {
+            margin-top: 30px;
+            font-size: 17px;
+            line-height: 25px;
+            font-weight: 500;
+          }
+        }
+        // About
+        .about {
+          width: 65%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 19px;
+          .title,
+          .btn {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          .title {
+            span {
+              margin-left: 4px;
+            }
+          }
+          .btn {
+            color: $about-btn-color;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $about-btn-hover-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Announce Slider
+  .announceSliderHolder {
+    margin: 98px 0 56px;
+  }
+}

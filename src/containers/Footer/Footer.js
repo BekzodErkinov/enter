@@ -32,13 +32,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        {/* Footer Links */}
-        {location.pathname === '/register' ||
-          location.pathname === '/profile' ||
-          location.pathname === '/announce' ||
-          <FooterLinks /> }
       </div>
+
+      {/* Footer Links */}
+      {location.pathname === '/register' ||
+        location.pathname === '/profile' ||
+        location.pathname === '/announce' ||
+          <FooterLinks /> }
     </div>
   )
 }

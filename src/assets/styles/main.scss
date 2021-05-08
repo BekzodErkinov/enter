@@ -1,6 +1,9 @@
 @import "../Fonts/gilroy.css";
 
-html { box-sizing: border-box; }
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 *,
 *:before,

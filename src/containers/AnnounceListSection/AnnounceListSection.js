@@ -30,7 +30,8 @@ const AnnounceListSection = () => {
         {announceType === 'newAnnounce' &&
           <AnnouncementsList showCount='16' announcementsList={announcementsList} />}
         {/* Best offer */}
-        {announceType === 'bestOffer' && <h1>Best Offer</h1>}
+        {announceType === 'bestOffer' &&
+          <AnnouncementsList showCount='4' announcementsList={announcementsList} />}
       </div>
     </section>
   )
