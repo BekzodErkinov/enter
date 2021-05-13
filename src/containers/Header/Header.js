@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Select from 'react-select'
 
@@ -9,9 +10,17 @@ import avatar from '../../assets/images/avatar.png'
 // SCSS
 import styles from './Header.module.scss'
 
-const Header = () => {
+const Header = ({ token, setToken }) => {
   // const [token, setToken] = useState(window.localStorage.getItem('sessionToken'))
   const location = useLocation()
+  // Profile Dropdown Menu
+  const [profileDropdown, setProfileDropdown] = useState(false)
+
+  // Profile > Logout button
+  const logoutButton = () => {
+    setToken(window.localStorage.removeItem('sessionToken'))
+    setProfileDropdown(!profileDropdown)
+  }
 
   // Select custom styles
   const customStyles = {
@@ -57,13 +66,38 @@ const Header = () => {
               <button type="button" disabled>Рус</button>
               <button type="button">O’z</button>
             </div>
-            {false ? (// token
-              <button type="button" className={styles.profile}>
-                <h3 className={styles.userName}>Бекзод</h3>
-                <div className={styles.userImg}>
-                  <img width="41" height="41" src={avatar} alt="Avatar" />
+            {token ? (
+              <div className={styles.profileHolder}>
+                <button
+                  type="button"
+                  onClick={() => setProfileDropdown(!profileDropdown)}
+                  className={styles.profileBtn}
+                >
+                  <h3 className={styles.userName}>Бекзод</h3>
+                  <div className={styles.userImg}>
+                    <img width="41" height="41" src={avatar} alt="Avatar" />
+                  </div>
+                </button>
+                <div className={styles.profileDropdownHolder}>
+                  <div className={`${styles.profileMenu} ${profileDropdown && styles.show}`}>
+                    <Link
+                      to="/profile"
+                      className={styles.profileLink}
+                      onClick={() => setProfileDropdown(!profileDropdown)}
+                    >Profile</Link>
+                    <button
+                      type="button"
+                      className={styles.settingsBtn}
+                      onClick={() => setProfileDropdown(!profileDropdown)}
+                    >Settings</button>
+                    <button
+                      type="button"
+                      className={styles.exitBtn}
+                      onClick={() => logoutButton()}
+                    >Logout</button>
+                  </div>
                 </div>
-              </button>
+              </div>
             ) : (
               <div className={styles.register}>
                 <Link to="/login">Вход</Link>
