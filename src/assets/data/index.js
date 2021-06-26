@@ -1354,6 +1354,30 @@ const singleAnnouncements2 = [
   },
 ]
 
+/* Profile Menu Controller Buttons - Header > section.profileLower */
+const profileMenuBtn = [
+  {
+    value: 'announcement',
+    title: 'Объявления',
+  },
+  {
+    value: 'message',
+    title: 'Сообщения',
+  },
+  {
+    value: 'paymentsAndInvoice',
+    title: 'Платежи и счёт',
+  },
+  {
+    value: 'settings',
+    title: 'Настройки',
+  },
+  {
+    value: 'myBusiness',
+    title: 'Мой бизнес',
+  },
+]
+
 
 export {
   announceCategoryOptions,
@@ -1368,4 +1392,5 @@ export {
   singleAnnounceTypeControlButtons,
   singleAnnouncements,
   singleAnnouncements2,
+  profileMenuBtn,
 }

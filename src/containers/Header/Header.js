@@ -3,7 +3,13 @@ import { Link, useLocation } from 'react-router-dom'
 import Select from 'react-select'
 
 // Data
-import { announceCategoryOptions, territoryOptions } from '../../assets/data'
+import {
+  announceCategoryOptions,
+  territoryOptions,
+  profileMenuBtn,
+} from '../../assets/data'
+// Containers
+import AnnounceTypeControl from '../../containers/AnnounceTypeControl'
 // Images
 import logo from '../../assets/images/logo.png'
 import avatar from '../../assets/images/avatar.png'
@@ -11,10 +17,11 @@ import avatar from '../../assets/images/avatar.png'
 import styles from './Header.module.scss'
 
 const Header = ({ token, setToken }) => {
-  // const [token, setToken] = useState(window.localStorage.getItem('sessionToken'))
   const location = useLocation()
   // Profile Dropdown Menu
   const [profileDropdown, setProfileDropdown] = useState(false)
+  // Profile page Menu Controller Buttons
+  const [menu, setMenu] = useState('announcement')
 
   // Profile > Logout button
   const logoutButton = () => {
@@ -48,7 +55,7 @@ const Header = ({ token, setToken }) => {
   }
 
   return (
-    <header className={styles.siteHeader}>
+    <header className={`${styles.siteHeader} ${location.pathname === '/profile' && styles.profilePage}`}>
       <div className="container">
         <div className={styles.navigation}>
           <Link to="/" className={styles.lead} title="kivi - домашняя страница бесплатных объявлений">
@@ -107,8 +114,10 @@ const Header = ({ token, setToken }) => {
           </div>
           {/* Hamburger Menu */}
         </div>
+
+        {/* Not to show the Announcements page */}
         {location.pathname === '/announcements' ||
-          <div className={styles.searchHolder}>
+          <section className={styles.searchHolder}>
             <form action="GET" className={styles.searchForm}>
               <div className={styles.inputWrapper}>
                 <Select
@@ -133,9 +142,35 @@ const Header = ({ token, setToken }) => {
               <span className={styles.plusIcon}>+</span>
               <span className={styles.txt}>Добавить обьявления</span>
             </Link>
-          </div>
+          </section>
         }
       </div>
+      {/* Show only the Profile page */}
+      {location.pathname === '/profile' &&
+        <section className={styles.profileLower}>
+          <div className={styles.userInfo}>
+            <div className="container">
+              <div className={styles.info}>
+                <h3 className={styles.title}>Здравствуйте Зухриддин Темиров</h3>
+                <div className={styles.payment}>
+                  <span className={styles.balance}>Ваш счет: 2 3000 сум</span>
+                  <button className={styles.payBtn} type="button">
+                    <span className={styles.plusIcon}>+</span>
+                    <span className={styles.txt}>Пополнить</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container">
+            <AnnounceTypeControl
+              announceType={menu}
+              setAnnounceType={setMenu}
+              announceTypeControllers={profileMenuBtn}
+            />
+          </div>
+        </section>
+      }
     </header>
   )
 }

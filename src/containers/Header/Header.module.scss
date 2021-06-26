@@ -110,7 +110,7 @@
             flex-direction: column;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 12px 4px 24px 5px rgba(0, 0, 0, 0.064);
+            box-shadow: -2px 10px 24px 8px rgba(0, 0, 0, 0.064);
             overflow: hidden;
             z-index: 10;
 
@@ -239,6 +239,66 @@
         border-radius: 22px;
         background: #11B463;
         transition: all 0.3s ease;
+      }
+    }
+  }
+
+  // Profile
+  &.profilePage {
+    padding-bottom: 0;
+  }
+  .profileLower {
+    .userInfo {
+      padding: 38px 0 16px;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+          color: #414D6A;
+          font-size: 17px;
+          font-weight: 700;
+        }
+        .payment {
+          display: flex;
+          align-items: center;
+          .balance {
+            color: #304FFF;
+            font-size: 17px;
+            font-weight: 500;
+            margin-right: 26px;
+          }
+          .payBtn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px 0 0;
+            border: 1px solid #41D481;
+            border-radius: 100px 20px 20px 100px;
+            transition: all 0.3s ease;
+            &:hover {
+              color: #fff;
+              background: #41D481;
+              .plusIcon {
+              background: #31b169;
+              }
+            }
+            .plusIcon {
+              font-size: 30px;
+              font-weight: 300;
+              background: #41D481;
+              padding: 2px 10px;
+              margin-right: 14px;
+              border-radius: 50%;
+              transition: all 0.1s ease;
+            }
+            .txt {
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
       }
     }
   }

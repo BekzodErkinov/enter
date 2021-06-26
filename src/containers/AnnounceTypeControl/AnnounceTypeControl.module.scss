@@ -33,4 +33,13 @@
       }
     }
   }
+
+  // Profile page
+  &.profilePage {
+    margin: 16px 0 0;
+    .announceTypeBtn {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
 }
