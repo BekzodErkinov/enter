@@ -4,8 +4,10 @@ import styles from './Shops.module.scss'
 const Shops = () => {
   return (
     <div className={styles.shopsHolder}>
-      <h1>Shops 🛒🛍️</h1>
-      <h2>Coming Soon!</h2>
+      <div className={styles.comingSoon}>
+        <h1>Магазины</h1>
+        <img src="http://round2offroad.com/wp-content/uploads/2017/06/coming-soon-lg-rotate.png" alt="Coming Soon!" />
+      </div>
     </div>
   )
 }

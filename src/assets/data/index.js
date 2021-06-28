@@ -47,6 +47,8 @@ import similarAnnounce2 from '../images/similarAnnounce2.png'
 import similarAnnounce3 from '../images/similarAnnounce3.png'
 import similarAnnounce4 from '../images/similarAnnounce4.png'
 
+/* Profile Table Item images */
+import defaultAnnounceImg from '../images/defaultAnnounceImg.png'
 
 /* Announce Select-Options - Header > Search */
 // Category
@@ -1378,6 +1380,54 @@ const profileMenuBtn = [
   },
 ]
 
+const profileTableData = [
+  {
+    id: 0,
+    img: defaultAnnounceImg,
+    title: 'Срочно нужен программист yii2',
+    cost: ['2 000 000', '6 000 000'],
+    data: ['# 345 002', 'С: 28 июнь', 'По: 28 июль'],
+    views: 195,
+    tel: 200,
+  },
+  {
+    id: 1,
+    img: defaultAnnounceImg,
+    title: 'Срочно нужен программист yii2',
+    cost: ['2 000 000', '6 000 000'],
+    data: ['# 345 002', 'С: 28 июнь', 'По: 28 июль'],
+    views: 195,
+    tel: 200,
+  },
+  {
+    id: 2,
+    img: defaultAnnounceImg,
+    title: 'Срочно нужен программист yii2',
+    cost: ['2 000 000', '6 000 000'],
+    data: ['# 345 002', 'С: 28 июнь', 'По: 28 июль'],
+    views: 195,
+    tel: 200,
+  },
+  {
+    id: 3,
+    img: defaultAnnounceImg,
+    title: 'Срочно нужен программист yii2',
+    cost: ['2 000 000', '6 000 000'],
+    data: ['# 345 002', 'С: 28 июнь', 'По: 28 июль'],
+    views: 195,
+    tel: 200,
+  },
+  {
+    id: 4,
+    img: defaultAnnounceImg,
+    title: 'Срочно нужен программист yii2',
+    cost: ['2 000 000', '6 000 000'],
+    data: ['# 345 002', 'С: 28 июнь', 'По: 28 июль'],
+    views: 195,
+    tel: 200,
+  },
+]
+
 
 export {
   announceCategoryOptions,
@@ -1393,4 +1443,5 @@ export {
   singleAnnouncements,
   singleAnnouncements2,
   profileMenuBtn,
+  profileTableData,
 }

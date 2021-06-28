@@ -6,13 +6,12 @@ import Select from 'react-select'
 import {
   announceCategoryOptions,
   territoryOptions,
-  profileMenuBtn,
 } from '../../assets/data'
-// Containers
-import AnnounceTypeControl from '../../containers/AnnounceTypeControl'
+
 // Images
 import logo from '../../assets/images/logo.png'
 import avatar from '../../assets/images/avatar.png'
+
 // SCSS
 import styles from './Header.module.scss'
 
@@ -20,8 +19,6 @@ const Header = ({ token, setToken }) => {
   const location = useLocation()
   // Profile Dropdown Menu
   const [profileDropdown, setProfileDropdown] = useState(false)
-  // Profile page Menu Controller Buttons
-  const [menu, setMenu] = useState('announcement')
 
   // Profile > Logout button
   const logoutButton = () => {
@@ -161,13 +158,6 @@ const Header = ({ token, setToken }) => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="container">
-            <AnnounceTypeControl
-              announceType={menu}
-              setAnnounceType={setMenu}
-              announceTypeControllers={profileMenuBtn}
-            />
           </div>
         </section>
       }
