@@ -61,13 +61,13 @@ const Register = ({ setToken }) => {
             </form>
             <div className={styles.signIn}>
               <span className={styles.orStyle}>или</span>
-              <Link className={styles.signInLink} to="/login">Войдите в систему, если у вас уже есть аккаунт kivi.uz</Link>
+              <Link className={styles.signInLink} to="/login">Войдите в систему, если у вас уже есть аккаунт enter.uz</Link>
             </div>
           </div>
           {/* Right Side */}
           <div className={styles.rightSide}>
             <div className={styles.appeal}>
-              <h2 className={styles.brandName}>kivi</h2>
+              <h2 className={styles.brandName}>enter</h2>
               <p className={styles.message}>Откройте для себя целую плошадку для продаже</p>
               <button className={styles.appealBtn}>Как это делать?</button>
             </div>

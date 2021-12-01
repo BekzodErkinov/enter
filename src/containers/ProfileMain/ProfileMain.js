@@ -1,6 +1,9 @@
 // Containers
 import ProfileTable from '../../containers/ProfileTable'
 
+// Images
+import ComingSoon from '../../assets/images/coming-soon.png'
+
 // SCSS
 import styles from './ProfileMain.module.scss'
 
@@ -21,7 +24,7 @@ const ProfileMain = ({ menu }) => {
         <section className="message">
           <div className={styles.profileComingSoon}>
             <h1>Сообщения</h1>
-            <img width="700" src="http://round2offroad.com/wp-content/uploads/2017/06/coming-soon-lg-rotate.png" alt="Coming Soon!" />
+            <img width="600" src={ComingSoon} alt="Coming Soon!" />
           </div>
         </section>
       }
@@ -31,7 +34,7 @@ const ProfileMain = ({ menu }) => {
         <section className="paymentsAndInvoice">
           <div className={styles.profileComingSoon}>
             <h1>Платежи и счёт</h1>
-            <img width="700" src="http://round2offroad.com/wp-content/uploads/2017/06/coming-soon-lg-rotate.png" alt="Coming Soon!" />
+            <img width="600" src={ComingSoon} alt="Coming Soon!" />
           </div>
         </section>
       }
@@ -41,7 +44,7 @@ const ProfileMain = ({ menu }) => {
         <section className="settings">
           <div className={styles.profileComingSoon}>
             <h1>Настройки</h1>
-            <img width="700" src="http://round2offroad.com/wp-content/uploads/2017/06/coming-soon-lg-rotate.png" alt="Coming Soon!" />
+            <img width="600" src={ComingSoon} alt="Coming Soon!" />
           </div>
         </section>
       }
@@ -51,7 +54,7 @@ const ProfileMain = ({ menu }) => {
         <section className="myBusiness">
           <div className={styles.profileComingSoon}>
             <h1>Мой бизнес</h1>
-            <img width="700" src="http://round2offroad.com/wp-content/uploads/2017/06/coming-soon-lg-rotate.png" alt="Coming Soon!" />
+            <img width="600" src={ComingSoon} alt="Coming Soon!" />
           </div>
         </section>
       }

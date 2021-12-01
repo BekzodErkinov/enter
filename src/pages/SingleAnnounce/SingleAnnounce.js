@@ -143,7 +143,7 @@ const SingleAnnounce = ({ match }) => {
               {/* Announcer */}
               <h4 className={styles.announcer}>
                 <span className={styles.title}>Автор обьявлении:</span>
-                <a className={styles.link} href="#">Зухриддин Темиров</a>
+                <a className={styles.link} href="#">Бекзод</a>
               </h4>
               {/* Buttons */}
               <div className={styles.btnWrap}>

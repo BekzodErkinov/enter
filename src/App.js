@@ -28,8 +28,6 @@ const SingleAnnounce = lazy(() => import('./pages/SingleAnnounce'))
 function App() {
   const [token, setToken] = useState(window.localStorage.getItem('sessionToken'))
 
-  console.log(token)
-
   return (
     <div className="App">
       <Router>

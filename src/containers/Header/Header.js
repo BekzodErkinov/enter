@@ -9,7 +9,7 @@ import {
 } from '../../assets/data'
 
 // Images
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo-b.png'
 import avatar from '../../assets/images/avatar.png'
 
 // SCSS
@@ -55,8 +55,8 @@ const Header = ({ token, setToken }) => {
     <header className={`${styles.siteHeader} ${location.pathname === '/profile' && styles.profilePage}`}>
       <div className="container">
         <div className={styles.navigation}>
-          <Link to="/" className={styles.lead} title="kivi - домашняя страница бесплатных объявлений">
-            <img width="67" height="67" src={logo} alt="kivi" />
+          <Link to="/" className={styles.lead} title="enter - домашняя страница бесплатных объявлений">
+            <img width="85" height="80" src={logo} alt="enter - online magazine" />
             <h2>Продай, найди, купи все что пожелаешь…</h2>
           </Link>
           <div className={styles.navLinksHolder}>
@@ -148,9 +148,9 @@ const Header = ({ token, setToken }) => {
           <div className={styles.userInfo}>
             <div className="container">
               <div className={styles.info}>
-                <h3 className={styles.title}>Здравствуйте Зухриддин Темиров</h3>
+                <h3 className={styles.title}>Здравствуйте Бекзод</h3>
                 <div className={styles.payment}>
-                  <span className={styles.balance}>Ваш счет: 2 3000 сум</span>
+                  <span className={styles.balance}>Ваш счет: 5 200 000 сум</span>
                   <button className={styles.payBtn} type="button">
                     <span className={styles.plusIcon}>+</span>
                     <span className={styles.txt}>Пополнить</span>

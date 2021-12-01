@@ -9,6 +9,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      img {
+        border-radius: 50%;
+      }
       h2 {
         width: 152px;
         color: #111;
@@ -207,10 +210,10 @@
           font-weight: 700;
           padding: 15px 19px;
           border-radius: 22px;
-          background: #19D476;
+          background: #4b64df;
           transition: all 0.3s ease;
           &:hover {
-            background: #19bd6b;
+            background: #3b53be;
           }
         }
       }
@@ -224,12 +227,12 @@
       font-weight: 700;
       padding-right: 25px;
       border-radius: 22px;
-      background: #19D476;
+      background: #4b64df;
       transition: all 0.3s ease;
       &:hover {
-        background: #19bd6b;
+        background: #3b53be;
         .plusIcon {
-          background: #0fa057;
+          background: #283eac;
         }
       }
       .plusIcon {
@@ -237,7 +240,7 @@
         padding: 7px 15px;
         margin-right: 12px;
         border-radius: 22px;
-        background: #11B463;
+        background: #344bbd;
         transition: all 0.3s ease;
       }
     }
@@ -274,20 +277,21 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 10px 0 0;
-            border: 1px solid #41D481;
+            border: 1px solid #4b64df;
             border-radius: 100px 20px 20px 100px;
             transition: all 0.3s ease;
             &:hover {
               color: #fff;
-              background: #41D481;
+              background: #4b64df;
               .plusIcon {
-              background: #31b169;
+                background: #374cb9;
               }
             }
             .plusIcon {
               font-size: 30px;
               font-weight: 300;
-              background: #41D481;
+              color: #fff;
+              background: #4b64df;
               padding: 2px 10px;
               margin-right: 14px;
               border-radius: 50%;

@@ -1,19 +1,19 @@
 {
-  "short_name": "kivi",
-  "name": "kivi online shop",
+  "short_name": "enter",
+  "name": "enter online magazine",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo-b.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
+      "src": "logo-b.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo.png",
+      "src": "logo-b.png",
       "type": "image/png",
       "sizes": "512x512"
     }
